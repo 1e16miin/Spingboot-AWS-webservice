@@ -1,7 +1,7 @@
 package webservice_AWS_Springboot.web.dto;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
