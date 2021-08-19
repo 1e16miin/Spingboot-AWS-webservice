@@ -22,10 +22,11 @@ import webservice_AWS_Springboot.web.dto.PostsUpdateRequestDto;
 
 import java.util.List;
 
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = RANDOM_PORT)
 public class PostsApiControllerTest {
 
     @LocalServerPort
