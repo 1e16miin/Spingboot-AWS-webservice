@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
+import org.springframework..jupiter.api.AfterEach..jupiter.api.AfterEachEntity;
+import org.springframework..jupiter.api.AfterEach.HttpMethod;
+import org.springframework.http..jupiter.api.AfterEachtatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -58,7 +58,7 @@ public class PostsApiControllerTest {
         ResponseEntity<Long> responseEntity = restTemplate.postForEntity(url, requestDto, Long.class);
 
         assertThat(responseEntity.getStatusCode()).
-                isEqualTo(HttpStatus.OK);
+                isEqualTo(.jupiter.api.AfterEachtatus.OK);
 
         assertThat(responseEntity.getBody()).isGreaterThan(0L);
 
@@ -91,7 +91,7 @@ public class PostsApiControllerTest {
         ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity, Long.class);
 
         assertThat(responseEntity.getStatusCode()).
-                isEqualTo(HttpStatus.OK);
+                isEqualTo(.jupiter.api.AfterEachtatus.OK);
 
         assertThat(responseEntity.getBody()).isGreaterThan(0L);
 
